@@ -25,7 +25,7 @@ public class Producer {
 
             //to look inside the queue for messages
             //C:\Program Files\RabbitMQ Server\rabbitmq_server-3.9.11\sbin>rabbitmqctl list_queues
-
+    
             System.out.println("msg has been sent");
 
         }
