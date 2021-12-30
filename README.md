@@ -13,13 +13,13 @@ Classes are set up so that:
 * EmitLog.java works with ReceiveLogs.java
 
 
-Producer - Consumer  
+Producer - Consumer  (Nameless exchange)
 * -implemented basic functionality so that messages can be sent and received.
 
-NewTask - Worker (Work Queue)
+NewTask - Worker (Work Queue with default exchange)
 * implemented round-robin work queue so that multiple workers can pick up messages from the queue in sequential order (still one task per worker).
 
-EmitLog - ReceiveLogs (Publish/Subscribe AKA Fanout)
+EmitLog - ReceiveLogs (Publish/Subscribe - Fanout exchange)
 * Implemented version in which a message will be delivered to multiple consumers
 
 Routing (Receiving messages selectively)
