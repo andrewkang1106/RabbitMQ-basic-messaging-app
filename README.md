@@ -10,10 +10,16 @@ Password: guest
 Classes are set up so that:  
 * Producer.java works with Consumer.java  
 * NewTask.java works with Worker.java  
+* EmitLog.java works with ReceiveLogs.java
 
 
 Producer - Consumer  
 * -implemented basic functionality so that messages can be sent and received.
 
-NewTask - Worker  
-* implemented round-robin dispatch so that multiple workers can pick up messages from the queue in sequential order.
+NewTask - Worker (Work Queue)
+* implemented round-robin work queue so that multiple workers can pick up messages from the queue in sequential order (still one task per worker).
+
+EmitLog - ReceiveLogs (Publish/Subscribe AKA Fanout)
+* Implemented version in which a message will be delivered to multiple consumers
+
+Routing (Receiving messages selectively)
