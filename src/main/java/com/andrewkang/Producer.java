@@ -24,7 +24,7 @@ public class Producer {
             //can call queueDeclare as many times as you want. If queue exists w/ same name, will skip. else create.
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
             String message = "test string" + LocalDateTime.now();
-            // Empty string exhcnages --> default exchanges. (default is direct exchange)
+            // Empty string exchanges --> default exchanges. (default is direct exchange)
             channel.basicPublish("", QUEUE_NAME, false, null, message.getBytes());
 
             //to look inside the queue for messages
