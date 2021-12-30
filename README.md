@@ -8,8 +8,8 @@ UserID: guest
 Password: guest
 
 Classes are set up so that:  
-Producer.java works with Consumer.java  
-NewTask.java works with Worker.java  
+* Producer.java works with Consumer.java  
+* NewTask.java works with Worker.java  
 
 
 Producer - Consumer  
