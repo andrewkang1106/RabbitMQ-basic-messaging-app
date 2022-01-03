@@ -20,6 +20,6 @@ NewTask - Worker (Work Queue with default exchange)
 * implemented round-robin work queue so that multiple workers can pick up messages from the queue in sequential order (still one task per worker).
 
 EmitLog - ReceiveLogs (Publish/Subscribe - Fanout exchange)
-* Implemented version in which a message will be delivered to multiple consumers
+* Implemented simple logging system in which a message will be delivered to multiple consumers
 
 Routing (Receiving messages selectively)
